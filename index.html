@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sam Khanaki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Georgia', 'Segoe UI', sans-serif;
+      color: #222;
+      background: #fdfdfd;
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 2em;
+      line-height: 1.7;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 1.5em;
+      margin-bottom: 2.5em;
+      flex-wrap: wrap;
+    }
+
+    .intro {
+      flex: 1 1 60%;
+      min-width: 250px;
+    }
+
+    .photos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      margin-left: 2em;
+    }
+
+    .photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 12px;
+      object-fit: cover;
+      background: #eee;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #2c3e50;
+    }
+
+    h2 {
+      color: #34495e;
+      margin-top: 2em;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.2em;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #555;
+      border-left: 3px solid #ccc;
+      padding-left: 1em;
+      margin: 2em 0;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
+      border-top: 1px solid #ddd;
+      padding-top: 1em;
+    }
+
+    @media (max-width: 750px) {
+      header { flex-direction: column; align-items: flex-start; }
+      .photos { flex-direction: row; margin: 1.5em 0 0 0; }
+      .photo { width: 130px; height: 130px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="intro">
+      <h1>Sam Khanaki</h1>
+      <p>
+        <strong>Computer Engineering Student</strong><br>
+        Sharif University of Technology<br>
+        Gold Medalist – Iranian Math Olympiad<br>
+        Interested in Bandit Algorithms, Local Search, and Optimization Theory
+      </p>
+      <p>
+        <a href="#publications">Publications</a> ·
+        <a href="Sam_Khanaki_CV.pdf">CV</a> ·
+        <a href="mailto:youremail@example.com">Email</a> ·
+        <a href="https://github.com/YOUR_USERNAME">GitHub</a> ·
+        <a href="https://linkedin.com/in/YOUR_USERNAME">LinkedIn</a>
+      </p>
+    </div>
+
+    <div class="photos">
+      <!-- 👇 Add your personal photo -->
+      <img src="sam.jpg" alt="Sam Khanaki portrait" class="photo">
+      <!-- 👇 Add Kuro’s photo later -->
+      <img src="kuro.jpg" alt="Kuro the cat" class="photo">
+    </div>
+  </header>
+
+  <section>
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Online learning and bandit algorithms</li>
+      <li>Combinatorial and non-submodular optimization</li>
+      <li>Graph theory and algorithmic design</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Current Work</h2>
+    <p>
+      I’m currently exploring connections between <em>localizability</em> of set functions and the performance of 
+      local search algorithms, inspired by Fujii’s ICML 2020 work on approximation guarantees. 
+      I’m particularly interested in applying these ideas to structured sparsity problems and 
+      cooperative decision-making in bandit settings.
+    </p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications & Works</h2>
+    <ul>
+      <li><strong>Delay and Cooperation in Nonstochastic Linear Bandits</strong> — independent study & analysis</li>
+      <li><strong>Sparse Optimization under Exchange Constraints</strong> — in preparation</li>
+      <li><strong>AI Course Toolkit</strong> — reinforcement learning experiments and teaching modules</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p>
+      <strong>B.Sc. in Computer Engineering</strong><br>
+      Sharif University of Technology, Tehran<br>
+      GPA: 17/20<br>
+      Coursework: Discrete Structures, Algorithms, Probability, Machine Learning
+    </p>
+  </section>
+
+  <blockquote>
+    “Mathematics, music, and machine learning — three ways to search for structure in chaos.”
+  </blockquote>
+
+  <footer>
+    © 2025 Sam Khanaki · Built with curiosity, jazz, and caffeine ☕
+  </footer>
+
+</body>
+</html>
