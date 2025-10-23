@@ -33,8 +33,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1em;
+      gap: 1.5em;
       margin-left: 2em;
+    }
+
+    .photo-wrapper {
+      text-align: center;
     }
 
     .photo {
@@ -43,6 +47,15 @@
       border-radius: 12px;
       object-fit: cover;
       background: #eee;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .caption {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 0.3em;
     }
 
     h1 {
@@ -90,7 +103,7 @@
 
     @media (max-width: 750px) {
       header { flex-direction: column; align-items: flex-start; }
-      .photos { flex-direction: row; margin: 1.5em 0 0 0; }
+      .photos { flex-direction: row; margin: 1.5em 0 0 0; gap: 1em; }
       .photo { width: 130px; height: 130px; }
     }
   </style>
@@ -104,50 +117,54 @@
         <strong>Computer Engineering Student</strong><br>
         Sharif University of Technology<br>
         Gold Medalist – Iranian Math Olympiad<br>
-        Interested in Bandit Algorithms, Local Search, and Optimization Theory
+        Silver Medalist - Iranian Math Olympiad<br>
+        Interested in Discrete Structures, Bandit Algorithms and Topological Data Analysis<br>
       </p>
       <p>
         <a href="#publications">Publications</a> ·
-        <a href="Sam_Khanaki_CV.pdf">CV</a> ·
-        <a href="mailto:youremail@example.com">Email</a> ·
-        <a href="https://github.com/YOUR_USERNAME">GitHub</a> ·
-        <a href="https://linkedin.com/in/YOUR_USERNAME">LinkedIn</a>
+        <a href="cv.pdf">CV</a> ·
+        <a href="mailto:sam.khanakiskh@gmail.com">Email</a> ·
+        <a href="https://github.com/Xaanaak">GitHub</a> ·
+        <a href="https://linkedin.com/in/sam-khanaki-358581361/">LinkedIn</a>
       </p>
     </div>
 
     <div class="photos">
-      <!-- 👇 Add your personal photo -->
-      <img src="sam.jpg" alt="Sam Khanaki portrait" class="photo">
-      <!-- 👇 Add Kuro’s photo later -->
-      <img src="kuro.jpg" alt="Kuro the cat" class="photo">
+      <div class="photo-wrapper">
+        <img src="sam.jpg" alt="Sam Khanaki portrait" class="photo">
+        <div class="caption">Sam Khanaki</div>
+      </div>
+      <div class="photo-wrapper">
+        <img src="kuro.jpg" alt="Kuro the cat" class="photo">
+        <div class="caption">Kuro 🐈‍⬛</div>
+      </div>
     </div>
+  </header>
   </header>
 
   <section>
     <h2>Research Interests</h2>
     <ul>
       <li>Online learning and bandit algorithms</li>
-      <li>Combinatorial and non-submodular optimization</li>
       <li>Graph theory and algorithmic design</li>
+      <li>Algebraic geometry and topological data analysis</li>
     </ul>
   </section>
 
   <section>
     <h2>Current Work</h2>
     <p>
-      I’m currently exploring connections between <em>localizability</em> of set functions and the performance of 
-      local search algorithms, inspired by Fujii’s ICML 2020 work on approximation guarantees. 
-      I’m particularly interested in applying these ideas to structured sparsity problems and 
-      cooperative decision-making in bandit settings.
+      I'm currently mostly focused on extending differential privacy to bandits setting, studying on ways to find or improve current regret bounds.
+      Also recently wrote a paper on regret lower bounds for batched adversarial linear bandits.
+      Previously researched topological data analysis with a great attention to persistent Homology.
     </p>
   </section>
 
   <section id="publications">
     <h2>Publications & Works</h2>
     <ul>
-      <li><strong>Delay and Cooperation in Nonstochastic Linear Bandits</strong> — independent study & analysis</li>
-      <li><strong>Sparse Optimization under Exchange Constraints</strong> — in preparation</li>
-      <li><strong>AI Course Toolkit</strong> — reinforcement learning experiments and teaching modules</li>
+      <li>Lower Bounds on Adversarial Batched Bandits - in preparation</li>
+      <li>Persistent Homology for Network Anomaly Detection - independent study</li> 
     </ul>
   </section>
 
@@ -156,17 +173,16 @@
     <p>
       <strong>B.Sc. in Computer Engineering</strong><br>
       Sharif University of Technology, Tehran<br>
-      GPA: 17/20<br>
-      Coursework: Discrete Structures, Algorithms, Probability, Machine Learning
+      Coursework: Discrete Structures, Design of Algorithms, Probability, Artificial Intelligence
     </p>
   </section>
 
   <blockquote>
-    “Mathematics, music, and machine learning — three ways to search for structure in chaos.”
+    "یک کال بی سام، بدتر از یک سال بی کام"
   </blockquote>
 
   <footer>
-    © 2025 Sam Khanaki · Built with curiosity, jazz, and caffeine ☕
+    © 2025 Sam Khanaki · Built with Blood, Sweat, and Jazz in the background 
   </footer>
 
 </body>
